@@ -1,12 +1,10 @@
 # coding = 'utf-8'
 # distutils: language=c++
 import numpy as np
-cimport numpy as np
 import pandas as pd
 import time
 import functools
-import cython
-cimport cython
+from target_encoding_v1_cy import *
 
 
 def log_execution_time(func):
@@ -43,22 +41,6 @@ def target_mean_v2(data, y_name, x_name):
         result[i] = (value_dict[data.loc[i, x_name]] - data.loc[i, y_name]) / (count_dict[data.loc[i, x_name]] - 1)
     return result
 
-cpdef target_mean_v3_cython(np.ndarray[long] xs, np.ndarray[long] ys, int shape, np.ndarray result, str y_name, str x_name):
-    value_dict = dict()
-    count_dict = dict()
-    for i in range(shape):
-        index = xs[i]
-        if index not in value_dict.keys():
-            value_dict[index] = ys[i]
-            count_dict[index] = 0
-        else:
-            value_dict[index] += ys[i]
-            count_dict[index] += 1
-    for i in range(shape):
-        index = xs[i]
-        result[i] = (value_dict[index] - ys[i]) / count_dict[index]
-    return result
-
 @log_execution_time
 def target_mean_v3(data, y_name, x_name):
     xs = data[x_name].values
@@ -67,17 +49,17 @@ def target_mean_v3(data, y_name, x_name):
     result = np.zeros(shape)
     return target_mean_v3_cython(xs, ys, shape, result, y_name, x_name)
 
-def main():
-    y = np.random.randint(2, size=(5000, 1))
-    x = np.random.randint(10, size=(5000, 1))
-    data = pd.DataFrame(np.concatenate([y, x], axis=1), columns=['y', 'x'])
-    result_1 = target_mean_v1(data, 'y', 'x')
-    result_2 = target_mean_v2(data, 'y', 'x')
-    result_3 = target_mean_v3(data, 'y', 'x')
-
-    diff = np.linalg.norm(result_1 - result_2)
-    print(diff)
-
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     y = np.random.randint(2, size=(5000, 1))
+#     x = np.random.randint(10, size=(5000, 1))
+#     data = pd.DataFrame(np.concatenate([y, x], axis=1), columns=['y', 'x'])
+#     result_1 = target_mean_v1(data, 'y', 'x')
+#     result_2 = target_mean_v2(data, 'y', 'x')
+#     result_3 = target_mean_v3(data, 'y', 'x')
+#
+#     diff = np.linalg.norm(result_1 - result_2)
+#     print(diff)
+#
+#
+# if __name__ == '__main__':
+#     main()

@@ -14,12 +14,12 @@
             "/Users/Brave/miniconda3/envs/Simple-Quantitative-Trading-System/lib/python3.7/site-packages/numpy/core/include"
         ],
         "language": "c++",
-        "name": "target_encoding_v1",
+        "name": "target_encoding_v1_cy",
         "sources": [
-            "target_encoding_v1.pyx"
+            "target_encoding_v1_cy.pyx"
         ]
     },
-    "module_name": "target_encoding_v1"
+    "module_name": "target_encoding_v1_cy"
 }
 END: Cython Metadata */
 
@@ -639,8 +639,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__target_encoding_v1
-#define __PYX_HAVE_API__target_encoding_v1
+#define __PYX_HAVE__target_encoding_v1_cy
+#define __PYX_HAVE_API__target_encoding_v1_cy
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -879,7 +879,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "target_encoding_v1.pyx",
+  "target_encoding_v1_cy.pyx",
   "__init__.pxd",
   "type.pxd",
 };
@@ -1682,14 +1682,14 @@ static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 
 /* Module declarations from 'cython' */
 
-/* Module declarations from 'target_encoding_v1' */
-static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObject *, PyArrayObject *, int, PyArrayObject *, PyObject *, PyObject *, int __pyx_skip_dispatch); /*proto*/
+/* Module declarations from 'target_encoding_v1_cy' */
+static PyObject *__pyx_f_21target_encoding_v1_cy_target_mean_v3_cython(PyArrayObject *, PyArrayObject *, int, PyArrayObject *, PyObject *, PyObject *, int __pyx_skip_dispatch); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_long = { "long", NULL, sizeof(long), { 0 }, 0, IS_UNSIGNED(long) ? 'U' : 'I', IS_UNSIGNED(long), 0 };
-#define __Pyx_MODULE_NAME "target_encoding_v1"
-extern int __pyx_module_is_main_target_encoding_v1;
-int __pyx_module_is_main_target_encoding_v1 = 0;
+#define __Pyx_MODULE_NAME "target_encoding_v1_cy"
+extern int __pyx_module_is_main_target_encoding_v1_cy;
+int __pyx_module_is_main_target_encoding_v1_cy = 0;
 
-/* Implementation of 'target_encoding_v1' */
+/* Implementation of 'target_encoding_v1_cy' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ImportError;
 static const char __pyx_k_np[] = "np";
@@ -1736,7 +1736,7 @@ static PyObject *__pyx_n_s_x_name;
 static PyObject *__pyx_n_s_xs;
 static PyObject *__pyx_n_s_y_name;
 static PyObject *__pyx_n_s_ys;
-static PyObject *__pyx_pf_18target_encoding_v1_target_mean_v3_cython(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_xs, PyArrayObject *__pyx_v_ys, int __pyx_v_shape, PyArrayObject *__pyx_v_result, PyObject *__pyx_v_y_name, PyObject *__pyx_v_x_name); /* proto */
+static PyObject *__pyx_pf_21target_encoding_v1_cy_target_mean_v3_cython(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_xs, PyArrayObject *__pyx_v_ys, int __pyx_v_shape, PyArrayObject *__pyx_v_result, PyObject *__pyx_v_y_name, PyObject *__pyx_v_x_name); /* proto */
 static __Pyx_CachedCFunction __pyx_umethod_PyDict_Type_keys = {0, &__pyx_n_s_keys, 0, 0, 0};
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_1;
@@ -1744,7 +1744,7 @@ static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
 /* Late includes */
 
-/* "target_encoding_v1.pyx":12
+/* "target_encoding_v1_cy.pyx":12
  * 
  * 
  * cpdef target_mean_v3_cython(np.ndarray[long] xs, np.ndarray[long] ys, int shape, np.ndarray result, str y_name, str x_name):             # <<<<<<<<<<<<<<
@@ -1752,8 +1752,8 @@ static PyObject *__pyx_tuple__2;
  *     count_dict = dict()
  */
 
-static PyObject *__pyx_pw_18target_encoding_v1_1target_mean_v3_cython(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObject *__pyx_v_xs, PyArrayObject *__pyx_v_ys, int __pyx_v_shape, PyArrayObject *__pyx_v_result, CYTHON_UNUSED PyObject *__pyx_v_y_name, CYTHON_UNUSED PyObject *__pyx_v_x_name, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_21target_encoding_v1_cy_1target_mean_v3_cython(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_f_21target_encoding_v1_cy_target_mean_v3_cython(PyArrayObject *__pyx_v_xs, PyArrayObject *__pyx_v_ys, int __pyx_v_shape, PyArrayObject *__pyx_v_result, CYTHON_UNUSED PyObject *__pyx_v_y_name, CYTHON_UNUSED PyObject *__pyx_v_x_name, CYTHON_UNUSED int __pyx_skip_dispatch) {
   PyObject *__pyx_v_value_dict = NULL;
   PyObject *__pyx_v_count_dict = NULL;
   int __pyx_v_i;
@@ -1798,7 +1798,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
   }
   __pyx_pybuffernd_ys.diminfo[0].strides = __pyx_pybuffernd_ys.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_ys.diminfo[0].shape = __pyx_pybuffernd_ys.rcbuffer->pybuffer.shape[0];
 
-  /* "target_encoding_v1.pyx":13
+  /* "target_encoding_v1_cy.pyx":13
  * 
  * cpdef target_mean_v3_cython(np.ndarray[long] xs, np.ndarray[long] ys, int shape, np.ndarray result, str y_name, str x_name):
  *     value_dict = dict()             # <<<<<<<<<<<<<<
@@ -1810,7 +1810,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
   __pyx_v_value_dict = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "target_encoding_v1.pyx":14
+  /* "target_encoding_v1_cy.pyx":14
  * cpdef target_mean_v3_cython(np.ndarray[long] xs, np.ndarray[long] ys, int shape, np.ndarray result, str y_name, str x_name):
  *     value_dict = dict()
  *     count_dict = dict()             # <<<<<<<<<<<<<<
@@ -1822,7 +1822,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
   __pyx_v_count_dict = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "target_encoding_v1.pyx":15
+  /* "target_encoding_v1_cy.pyx":15
  *     value_dict = dict()
  *     count_dict = dict()
  *     for i in range(shape):             # <<<<<<<<<<<<<<
@@ -1834,7 +1834,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
     __pyx_v_i = __pyx_t_4;
 
-    /* "target_encoding_v1.pyx":16
+    /* "target_encoding_v1_cy.pyx":16
  *     count_dict = dict()
  *     for i in range(shape):
  *         index = xs[i]             # <<<<<<<<<<<<<<
@@ -1856,7 +1856,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
     __Pyx_XDECREF_SET(__pyx_v_index, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "target_encoding_v1.pyx":17
+    /* "target_encoding_v1_cy.pyx":17
  *     for i in range(shape):
  *         index = xs[i]
  *         if index not in value_dict.keys():             # <<<<<<<<<<<<<<
@@ -1870,7 +1870,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
     __pyx_t_8 = (__pyx_t_7 != 0);
     if (__pyx_t_8) {
 
-      /* "target_encoding_v1.pyx":18
+      /* "target_encoding_v1_cy.pyx":18
  *         index = xs[i]
  *         if index not in value_dict.keys():
  *             value_dict[index] = ys[i]             # <<<<<<<<<<<<<<
@@ -1892,7 +1892,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
       if (unlikely(PyDict_SetItem(__pyx_v_value_dict, __pyx_v_index, __pyx_t_1) < 0)) __PYX_ERR(0, 18, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "target_encoding_v1.pyx":19
+      /* "target_encoding_v1_cy.pyx":19
  *         if index not in value_dict.keys():
  *             value_dict[index] = ys[i]
  *             count_dict[index] = 0             # <<<<<<<<<<<<<<
@@ -1901,7 +1901,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
  */
       if (unlikely(PyDict_SetItem(__pyx_v_count_dict, __pyx_v_index, __pyx_int_0) < 0)) __PYX_ERR(0, 19, __pyx_L1_error)
 
-      /* "target_encoding_v1.pyx":17
+      /* "target_encoding_v1_cy.pyx":17
  *     for i in range(shape):
  *         index = xs[i]
  *         if index not in value_dict.keys():             # <<<<<<<<<<<<<<
@@ -1911,7 +1911,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
       goto __pyx_L5;
     }
 
-    /* "target_encoding_v1.pyx":21
+    /* "target_encoding_v1_cy.pyx":21
  *             count_dict[index] = 0
  *         else:
  *             value_dict[index] += ys[i]             # <<<<<<<<<<<<<<
@@ -1943,7 +1943,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "target_encoding_v1.pyx":22
+      /* "target_encoding_v1_cy.pyx":22
  *         else:
  *             value_dict[index] += ys[i]
  *             count_dict[index] += 1             # <<<<<<<<<<<<<<
@@ -1964,7 +1964,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
     __pyx_L5:;
   }
 
-  /* "target_encoding_v1.pyx":23
+  /* "target_encoding_v1_cy.pyx":23
  *             value_dict[index] += ys[i]
  *             count_dict[index] += 1
  *     for i in range(shape):             # <<<<<<<<<<<<<<
@@ -1976,7 +1976,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
     __pyx_v_i = __pyx_t_4;
 
-    /* "target_encoding_v1.pyx":24
+    /* "target_encoding_v1_cy.pyx":24
  *             count_dict[index] += 1
  *     for i in range(shape):
  *         index = xs[i]             # <<<<<<<<<<<<<<
@@ -1998,7 +1998,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
     __Pyx_XDECREF_SET(__pyx_v_index, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "target_encoding_v1.pyx":25
+    /* "target_encoding_v1_cy.pyx":25
  *     for i in range(shape):
  *         index = xs[i]
  *         result[i] = (value_dict[index] - ys[i]) / count_dict[index]             # <<<<<<<<<<<<<<
@@ -2032,7 +2032,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "target_encoding_v1.pyx":26
+  /* "target_encoding_v1_cy.pyx":26
  *         index = xs[i]
  *         result[i] = (value_dict[index] - ys[i]) / count_dict[index]
  *     return result             # <<<<<<<<<<<<<<
@@ -2042,7 +2042,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
   __pyx_r = ((PyObject *)__pyx_v_result);
   goto __pyx_L0;
 
-  /* "target_encoding_v1.pyx":12
+  /* "target_encoding_v1_cy.pyx":12
  * 
  * 
  * cpdef target_mean_v3_cython(np.ndarray[long] xs, np.ndarray[long] ys, int shape, np.ndarray result, str y_name, str x_name):             # <<<<<<<<<<<<<<
@@ -2063,7 +2063,7 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_xs.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_ys.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("target_encoding_v1.target_mean_v3_cython", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("target_encoding_v1_cy.target_mean_v3_cython", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   goto __pyx_L2;
   __pyx_L0:;
@@ -2079,8 +2079,8 @@ static PyObject *__pyx_f_18target_encoding_v1_target_mean_v3_cython(PyArrayObjec
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_18target_encoding_v1_1target_mean_v3_cython(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_18target_encoding_v1_1target_mean_v3_cython(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_21target_encoding_v1_cy_1target_mean_v3_cython(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_21target_encoding_v1_cy_1target_mean_v3_cython(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_xs = 0;
   PyArrayObject *__pyx_v_ys = 0;
   int __pyx_v_shape;
@@ -2175,7 +2175,7 @@ static PyObject *__pyx_pw_18target_encoding_v1_1target_mean_v3_cython(PyObject *
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("target_mean_v3_cython", 1, 6, 6, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 12, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("target_encoding_v1.target_mean_v3_cython", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("target_encoding_v1_cy.target_mean_v3_cython", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -2184,7 +2184,7 @@ static PyObject *__pyx_pw_18target_encoding_v1_1target_mean_v3_cython(PyObject *
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_result), __pyx_ptype_5numpy_ndarray, 1, "result", 0))) __PYX_ERR(0, 12, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_y_name), (&PyString_Type), 1, "y_name", 1))) __PYX_ERR(0, 12, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_x_name), (&PyString_Type), 1, "x_name", 1))) __PYX_ERR(0, 12, __pyx_L1_error)
-  __pyx_r = __pyx_pf_18target_encoding_v1_target_mean_v3_cython(__pyx_self, __pyx_v_xs, __pyx_v_ys, __pyx_v_shape, __pyx_v_result, __pyx_v_y_name, __pyx_v_x_name);
+  __pyx_r = __pyx_pf_21target_encoding_v1_cy_target_mean_v3_cython(__pyx_self, __pyx_v_xs, __pyx_v_ys, __pyx_v_shape, __pyx_v_result, __pyx_v_y_name, __pyx_v_x_name);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2195,7 +2195,7 @@ static PyObject *__pyx_pw_18target_encoding_v1_1target_mean_v3_cython(PyObject *
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_18target_encoding_v1_target_mean_v3_cython(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_xs, PyArrayObject *__pyx_v_ys, int __pyx_v_shape, PyArrayObject *__pyx_v_result, PyObject *__pyx_v_y_name, PyObject *__pyx_v_x_name) {
+static PyObject *__pyx_pf_21target_encoding_v1_cy_target_mean_v3_cython(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_xs, PyArrayObject *__pyx_v_ys, int __pyx_v_shape, PyArrayObject *__pyx_v_result, PyObject *__pyx_v_y_name, PyObject *__pyx_v_x_name) {
   __Pyx_LocalBuf_ND __pyx_pybuffernd_xs;
   __Pyx_Buffer __pyx_pybuffer_xs;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_ys;
@@ -2226,7 +2226,7 @@ static PyObject *__pyx_pf_18target_encoding_v1_target_mean_v3_cython(CYTHON_UNUS
   }
   __pyx_pybuffernd_ys.diminfo[0].strides = __pyx_pybuffernd_ys.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_ys.diminfo[0].shape = __pyx_pybuffernd_ys.rcbuffer->pybuffer.shape[0];
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_18target_encoding_v1_target_mean_v3_cython(__pyx_v_xs, __pyx_v_ys, __pyx_v_shape, __pyx_v_result, __pyx_v_y_name, __pyx_v_x_name, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_21target_encoding_v1_cy_target_mean_v3_cython(__pyx_v_xs, __pyx_v_ys, __pyx_v_shape, __pyx_v_result, __pyx_v_y_name, __pyx_v_x_name, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2242,7 +2242,7 @@ static PyObject *__pyx_pf_18target_encoding_v1_target_mean_v3_cython(CYTHON_UNUS
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_xs.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_ys.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("target_encoding_v1.target_mean_v3_cython", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("target_encoding_v1_cy.target_mean_v3_cython", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -3098,24 +3098,24 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
 }
 
 static PyMethodDef __pyx_methods[] = {
-  {"target_mean_v3_cython", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_18target_encoding_v1_1target_mean_v3_cython, METH_VARARGS|METH_KEYWORDS, 0},
+  {"target_mean_v3_cython", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_21target_encoding_v1_cy_1target_mean_v3_cython, METH_VARARGS|METH_KEYWORDS, 0},
   {0, 0, 0, 0}
 };
 
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_target_encoding_v1(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_target_encoding_v1_cy(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_target_encoding_v1},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_target_encoding_v1_cy},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "target_encoding_v1",
+    "target_encoding_v1_cy",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -3333,11 +3333,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC inittarget_encoding_v1(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC inittarget_encoding_v1(void)
+__Pyx_PyMODINIT_FUNC inittarget_encoding_v1_cy(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC inittarget_encoding_v1_cy(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_target_encoding_v1(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_target_encoding_v1(void)
+__Pyx_PyMODINIT_FUNC PyInit_target_encoding_v1_cy(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_target_encoding_v1_cy(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -3404,7 +3404,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_target_encoding_v1(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_target_encoding_v1_cy(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -3416,7 +3416,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_target_encoding_v1(PyObject *__pyx
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'target_encoding_v1' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'target_encoding_v1_cy' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -3431,7 +3431,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_target_encoding_v1(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_target_encoding_v1_cy(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -3470,7 +3470,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("target_encoding_v1", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("target_encoding_v1_cy", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -3488,14 +3488,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_target_encoding_v1) {
+  if (__pyx_module_is_main_target_encoding_v1_cy) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "target_encoding_v1")) {
-      if (unlikely(PyDict_SetItemString(modules, "target_encoding_v1", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "target_encoding_v1_cy")) {
+      if (unlikely(PyDict_SetItemString(modules, "target_encoding_v1_cy", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -3516,7 +3516,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "target_encoding_v1.pyx":3
+  /* "target_encoding_v1_cy.pyx":3
  * # coding = 'utf-8'
  * # distutils: language=c++
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -3528,7 +3528,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "target_encoding_v1.pyx":5
+  /* "target_encoding_v1_cy.pyx":5
  * import numpy as np
  * cimport numpy as np
  * import pandas as pd             # <<<<<<<<<<<<<<
@@ -3540,7 +3540,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_pd, __pyx_t_1) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "target_encoding_v1.pyx":6
+  /* "target_encoding_v1_cy.pyx":6
  * cimport numpy as np
  * import pandas as pd
  * import time             # <<<<<<<<<<<<<<
@@ -3552,7 +3552,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_time, __pyx_t_1) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "target_encoding_v1.pyx":7
+  /* "target_encoding_v1_cy.pyx":7
  * import pandas as pd
  * import time
  * import functools             # <<<<<<<<<<<<<<
@@ -3564,7 +3564,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_functools, __pyx_t_1) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "target_encoding_v1.pyx":1
+  /* "target_encoding_v1_cy.pyx":1
  * # coding = 'utf-8'             # <<<<<<<<<<<<<<
  * # distutils: language=c++
  * import numpy as np
@@ -3589,11 +3589,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init target_encoding_v1", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init target_encoding_v1_cy", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init target_encoding_v1");
+    PyErr_SetString(PyExc_ImportError, "init target_encoding_v1_cy");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
