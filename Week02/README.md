@@ -9,3 +9,28 @@
 作。
 注意：禁止使用函数 recursive call。
 注意：必须要处理异常情况，例如缺失值、inf 等
+
+# Notes
+
+Please run `testing.py` to see the results.
+
+```
+target_mean_v1 took 28960.182091 ms
+target_mean_v2 took 347.30334500000026 ms
+target_mean_v3 took 1.3552800000020682 ms
+target_mean_v4 took 1.3159369999975468 ms
+target_mean_v5 took 0.8711639999994247 ms
+```
+
+```
+v1 is the unoptimized version.
+v2 is the two loops version.
+v3 just converts the arguments of the function to cython.
+v4 is cython version but has used python type `dict()`
+v5 is completely cython version.
+```
+
+## TODO
+
+- [ ] replace the type of `map`
+- [ ] use multi-threaded
